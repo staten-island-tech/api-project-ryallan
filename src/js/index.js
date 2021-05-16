@@ -9,6 +9,9 @@ const query = async function () {
       "https://superheroapi.com/api/4026085827461072/search/batman"
     );
     const data = await response.json();
+    data.results.forEach((superhero) => {
+      DOMSelectors.grid.insertAdjacentHTML("beforeend", "");
+    });
     console.log(data);
   } catch (error) {
     console.log(error);
