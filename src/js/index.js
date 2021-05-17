@@ -10,10 +10,11 @@ const query = async function () {
     );
     const data = await response.json();
     console.log(data)
-    data.map.forEach((superhero) => {
-      DOMSelectors.grid.insertAdjacentHTML("beforeend", "");
+    data.results.forEach((superhero) => {
+      //DOMSelectors.grid.insertAdjacentHTML("beforeend", "");
+      console.log(superhero);
     });
-    console.log(data);
+    
   } catch (error) {
     console.log(error);
     alert("Something is Wrong");
