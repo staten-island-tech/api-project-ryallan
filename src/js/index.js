@@ -9,7 +9,7 @@ const query = async function () {
       `https://www.superheroapi.com/api.php/298075655132777/80`
     );
     const data = await response.json();
-    console.log("data blahblahblah");
+    console.log(data.biography);
   } catch (error) {
     console.log(error);
     alert("bro your code aint working");
