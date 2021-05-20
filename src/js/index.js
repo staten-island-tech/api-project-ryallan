@@ -1,5 +1,4 @@
 import { DOMSelectors } from "./DOM";
-import { genres } from "./genre";
 
 const key = "298075655132777";
 
@@ -10,7 +9,7 @@ const query = async function () {
     );
     const data = await response.json();
     data.name.forEach((element) => {
-      DOMSelectors.grid.insertAdjacentHTML("beforeend", <div class="movie-card">
+      DOMSelectors.grid.insertAdjacentHTML("beforeend", `<div class="movie-card">
       <div class="movie-card-front">
         <img src="https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg" alt="" class="poster" />
       </div>
@@ -32,7 +31,7 @@ const query = async function () {
           <li class="movie-genre">Horror</li>
         </div>
       </div>
-    </div>);
+    </div>`);
     });
   } catch (error) {
     console.log(error);
