@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background-color: #111;
+  background-color: #b10c0c;
 }
 
 .header {
@@ -26,7 +26,7 @@ body {
   font-size: 3.8rem;
 }
 
-.movie-grid {
+.superhero-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,7 @@ body {
           align-items: center;
 }
 
-.movie-card {
+.superhero-card {
   height: 65vh;
   width: 20vw;
   margin: 0 auto;
@@ -51,7 +51,7 @@ body {
   margin: 2rem auto;
 }
 
-.movie-card-front {
+.superhero-front {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -64,41 +64,33 @@ body {
   transition: all 0.3s;
 }
 
-.poster {
+/*.poster {
   width: 100%;
   height: 100%;
 }
-
 .movie-card-back {
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   color: white;
   background-color: rgba(33, 33, 33, 0.8);
   width: 100%;
   height: 100%;
 }
-
 .movie-card-header {
   font-size: 2.4rem;
   text-transform: uppercase;
   margin: 1rem auto;
+
   text-align: center;
 }
-
 .score-box,
 .release-box {
   text-align: center;
@@ -107,27 +99,18 @@ body {
 .movie-genres {
   font-size: 1.6rem;
   padding: 1rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
 .movie-genre {
   list-style: none;
 }
-
 .user-score {
   font-size: 2rem;
 }
-
 .release-date {
   font-size: 2rem;
 }
@@ -135,16 +118,12 @@ body {
 .movie-card:hover .movie-card-front {
   z-index: 1;
 }
-
 .movie-card:hover .movie-card-back {
   z-index: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .test {
   color: black;
   font-size: 3rem;
-}
+}*/
 /*# sourceMappingURL=style.css.map */
