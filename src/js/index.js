@@ -10,8 +10,9 @@ const query = async function () {
     );
     const data = await response.json();
     data.biography.forEach((superhero) => {
-      DOMSelectors.grid.insertAdjacentHTML("beforeend",
-      `
+      DOMSelectors.grid.insertAdjacentHTML(
+        "beforeend",
+        `
       <section class="movie-grid">
       <div class="movie-card">
       <div class="movie-card-front">
@@ -36,11 +37,12 @@ const query = async function () {
         </div>
       </div>
     </div>
-    </section>`);
+    </section>`
+      );
     });
   } catch (error) {
     console.log(error);
-    alert("bro your code aint working");
+    alert("The code isn't working");
   }
 };
 query();
