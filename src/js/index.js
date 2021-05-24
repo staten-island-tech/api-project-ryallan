@@ -6,7 +6,7 @@ const key = "298075655132777";
 const query = async function () {
   try {
     const response = await fetch(
-      `https://www.superheroapi.com/api.php/298075655132777/80`
+      `https://superheroapi.com/api/298075655132777/644`
     );
     const data = await response.json();
     data.biography.forEach((superhero) => {
