@@ -57,7 +57,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  /* background-image: url("https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg"); */
+  /* background-image: url("https://www.superherodb.com/pictures2/portraits/10/100/791.jpg"); */
   background-position: center;
   z-index: 3;
   -webkit-transition: all 0.3s;
@@ -65,33 +65,40 @@ body {
 }
 
 .poster {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 
-/*.superhero-card-back {
+.superhero-card-back {
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-
   display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
   background-color: rgba(33, 33, 33, 0.8);
   width: 100%;
   height: 100%;
 }
+
 .superhero-card-header {
   font-size: 2.4rem;
   text-transform: uppercase;
   margin: 1rem auto;
-
   text-align: center;
 }
+
 /*.score-box,
 .release-box {
   text-align: center;
