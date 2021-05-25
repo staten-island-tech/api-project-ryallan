@@ -19,7 +19,7 @@ const query = async function () {
         <img src="https://image.tmdb.org/t/p/w300/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg" alt="" class="poster" />
       </div>
       <div class="movie-card-back">
-        <h3 class="movie-card-header">${superhero[fullName]}</h3>
+        <h3 class="movie-card-header">${superhero.publisher}</h3>
         <div class="score-box">
           <p class="user-score">${superhero.publisher}</p>
           <p class="user-score">8.4</p>
@@ -27,7 +27,7 @@ const query = async function () {
 
         <div class="release-box">
           <p class="release-date">First Appearance</p>
-          <p class="release-date">${superhero[firstAppearance]}</p>
+          <p class="release-date">${superhero.publisher}</p>
         </div>
 
         <div class="movie-genres">
