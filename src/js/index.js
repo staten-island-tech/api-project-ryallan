@@ -13,7 +13,7 @@ const query = async function () {
     data.results.forEach((superhero) => {
       DOMSelectors.grid.insertAdjacentHTML("beforeend", `<div class="superhero-card">
       <div class="superhero-front">
-      <h2>${superhero.publisher}</h2>
+      <h2>${superhero.results}</h2>
        <img
          src= "https://www.superherodb.com/pictures2/portraits/10/100/791.jpg"
          alt=""
