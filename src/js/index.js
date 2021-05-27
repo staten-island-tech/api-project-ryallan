@@ -6,7 +6,7 @@ const key = "https://superheroapi.com/api/4026085827461072";
 const query = async function () {
   try {
     const response = await fetch(
-      "https://superheroapi.com/api/4026085827461072/search/superman"
+      "https://superheroapi.com/api/4026085827461072/search/batman"
     );
     const data = await response.json();
     console.log(data)
@@ -20,7 +20,7 @@ const query = async function () {
        />
      </div>
      <div class="superhero-card-back">
-          <h3 class="superhero-card-header">Superman</h3>
+          <h3 class="superhero-card-header">${superhero.name}</h3>
           <div class="full-name">
             <p class="whole-name">Full Name</p>
             <p class="whole-name">Clark Kent</p>
