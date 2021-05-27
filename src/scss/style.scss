@@ -80,16 +80,12 @@ body {
   text-align: center;
 }
 
-#h2 {
-  color: black;
-}
-
-/*.score-box,
+.score-box,
 .release-box {
   text-align: center;
 }
 
-.movie-genres {
+.superhero-genres {
   font-size: 1.6rem;
   padding: 1rem 2rem;
   display: flex;
@@ -98,7 +94,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-.movie-genre {
+.superhero-genre {
   list-style: none;
 }
 .user-score {
@@ -108,14 +104,14 @@ body {
   font-size: 2rem;
 }
 
-.movie-card:hover .movie-card-front {
+.superhero-card:hover .superhero-card-front {
   z-index: 1;
 }
-.movie-card:hover .movie-card-back {
+.superhero-card:hover .superhero-card-back {
   z-index: 3;
   display: flex;
 }
 .test {
   color: black;
   font-size: 3rem;
-}*/
+}
