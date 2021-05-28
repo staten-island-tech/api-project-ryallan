@@ -14,7 +14,7 @@ const query = async function () {
       DOMSelectors.grid.insertAdjacentHTML("beforeend", `<div class="superhero-card">
       <div class="superhero-front">
        <img
-         src= "https://www.superherodb.com/pictures2/portraits/10/100/791.jpg"
+         src= "${superhero.image.url}"
          alt=""
          class="poster"
        />
@@ -22,8 +22,8 @@ const query = async function () {
      <div class="superhero-card-back">
           <h3 class="superhero-card-header">${superhero.name}</h3>
           <div class="full-name">
-            <p class="whole-name">Full Name</p>
-            <p class="whole-name">Clark Kent</p>
+            <p class="whole-name">Alignment</p>
+            <p class="whole-name">${superhero.biography.alignment}</p>
           </div>`);
       console.log(superhero);
     });
