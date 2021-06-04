@@ -1,5 +1,4 @@
 import { DOMSelectors } from "./DOM";
-//import { genres } from "./genre";
 
 const key = "https://superheroapi.com/api/4026085827461072";
 

@@ -5,9 +5,10 @@ const listen = function() {
         e.preventDefault();
         const searchParams = DOMSelectors.searchArea.value;
         const searchQuery = async function () {
+            DOMSelectors.grid.innerHTML = ""
             try {
               const response = await fetch(
-                'https://superheroapi.com/api/4026085827461072/search/${searchParams}'
+                `https://superheroapi.com/api/4026085827461072/search/${searchParams}`
               );
               const data = await response.json();
               console.log(data)
